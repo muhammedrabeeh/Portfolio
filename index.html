@@ -15,6 +15,25 @@
         .hero{
             padding:80px 0;
             text-align:center;
+            background-image: url('assets/images/12.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
+            color: #fff;
+        }
+
+        .hero::before{
+            content:"";
+            position:absolute;
+            inset:0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        .hero .container{
+            position: relative;
+            z-index: 2;
         }
         .section{
             padding:60px 0;
@@ -60,8 +79,7 @@
 <section id="about" class="section bg-white">
     <div class="container">
         <h2 class="text-center mb-4">About Me</h2>
-        <p class="text-center">I am a data analyst passionate about transforming raw data into meaningful insights.
-            I work with real-world datasets to clean, analyze trends, and build visual dashboards that support data-driven decision making.</p>
+        <p class="text-center">I am a data analyst passionate about extracting insights from data. I work with real datasets, clean data, analyze trends, and create visual dashboards for decision making.</p>
     </div>
 </section>
 
@@ -128,10 +146,9 @@
         <h2 class="text-center mb-4">Certificates</h2>
         <div class="row g-4">
             <div class="col-md-3"><img src="assets/certificates/c1.jpg" class="img-fluid"></div>
-            <div class="col-md-3"><img src="assets/certificates/C2.png" class="img-fluid"></div>
-            <div class="col-md-3"><img src="assets/certificates/C3.png" class="img-fluid"></div>
-            <div class="col-md-3"><img src="assets/certificates/C4.png" class="img-fluid"></div>
-            <div class="col-md-3"><img src="assets/certificates/C5.png" class="img-fluid"></div>
+            <div class="col-md-3"><img src="assets/certificates/c2.jpg" class="img-fluid"></div>
+            <div class="col-md-3"><img src="assets/certificates/c3.jpg" class="img-fluid"></div>
+            <div class="col-md-3"><img src="assets/certificates/c4.jpg" class="img-fluid"></div>
         </div>
     </div>
 </section>
@@ -149,7 +166,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
