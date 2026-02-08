@@ -135,25 +135,25 @@
         <p>Sales analysis dashboard.</p>
 
         <!-- Button opens internal section -->
-        <button class="btn btn-sm btn-outline-primary" onclick="toggleDashboard()">
+        <button type="button" class="btn btn-sm btn-outline-primary" onclick="toggleDashboard()">
             View Dashboard
         </button>
     </div>
 </div>
-       
-  <!-- DASHBOARD DETAILS SECTION -->
+
+<!-- DASHBOARD DETAILS SECTION -->
 <section id="dashboard-details" class="section bg-white" style="display:none;">
     <div class="container">
         <h2 class="text-center mb-4">Power BI Dashboard</h2>
 
         <!-- GitHub Link -->
         <div class="text-center mb-4">
-            <a href=">https://github.com/muhammedrabeeh/Storedata-Bussiness-Insights/blob/main/PowerBI/Sales_dashboard.pbix/ sales analysis report 1.pbix"
+            <a href="https://github.com/muhammedrabeeh/Storedata-Bussiness-Insights/tree/main/PowerBI"
                target="_blank"
                class="btn btn-primary">
                 Open Power BI File on GitHub
             </a>
-        </div
+        </div>
 
         <!-- Dashboard Images -->
         <div class="row g-3">
@@ -173,7 +173,21 @@
     </div>
 </section>
 
- 
+
+            <script>
+function toggleDashboard() {
+    var section = document.getElementById("dashboard-details");
+
+    if(section.style.display === "none" || section.style.display === ""){
+        section.style.display = "block";
+    } else {
+        section.style.display = "none";
+    }
+
+    section.scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
 
 <!-- CERTIFICATES -->
 <section id="certificates" class="section">
